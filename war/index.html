@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Hello App Engine</title>
+  </head>
+
+  <body>
+    <h1>Hello App Engine!</h1>
+    
+    <form method="post" action="cloudsi">
+    	Selectionnez client (multi-tenancy):
+    	<select name="banque">
+    		<option value="CreditLyonnais">CreditLyonnais</option>
+    		<option value="CreditMutuel">CreditMutuel</option>
+    	</select>
+    	<br>
+	    <input type="text" name="nom">
+	    <input type="submit">
+    </form>
+    
+    Lien vers la page d'admin qui permet de voir les données dans la base de données :
+	<a href="http://localhost:8888/_ah/admin">http://localhost:8888/_ah/admin</a><br>
+	
+	Lien vers la page d'admin qui permet de choisir le domain (namespace) où sont stockée les données de chaque client :
+	<a href="http://localhost:8888/_ah/admin/datastore?namespace=&kind=">http://localhost:8888/_ah/admin/datastore?namespace=&kind=</a>
+	Saisir CreditLyonnais ou CreditMutuel comme Namespace.
+    
+    
+  </body>
+</html>
